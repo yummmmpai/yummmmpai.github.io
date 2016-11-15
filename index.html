@@ -1,0 +1,173 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width" />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="McCannXBC Holiday Card" content="">
+    <meta name="McCannXBC" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Happy Holidays From McCannXBC</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/css/style.css" rel="stylesheet">
+
+    <script type = "text/javascript" src ="/js/music.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script>
+
+		function TheLogin() {
+
+			var password = 'celebrate';
+
+			if (this.document.login.pass.value == password) {
+			  top.location.href="card.html";
+			}
+			else {
+			  alert("That's incorrect. Please try again.");
+			}
+		}
+
+		$(document).ready(function() {
+			$(".input").keydown(function(event) {
+				if (event.keyCode === 13) {
+					TheLogin();
+					return false;
+				}
+			});
+		});
+
+
+
+	</script>
+
+	<style>
+
+		.container {
+			width: 900px;
+		}
+
+		form {
+			padding-top: 10px;
+			text-align: center;
+		}
+
+		.header {
+			display: block;
+			width: 80%;
+			margin: 100px auto -20px auto;
+			text-align: center;
+		}
+
+		.text {
+			display: block;
+			width: 80%;
+			margin: 0 auto;
+		}
+
+		.input {
+			width: 80%;
+		}
+
+		.stars {
+			width: 12%;
+		}
+
+		.left, .right {
+			width: 12%;
+			margin-top: -5px;
+		}
+
+		@media (max-width: 991px) and (min-width: 768px) {
+			.container {
+				width: 700px;
+			}
+
+			.input {
+				width: 70%;
+			}
+
+			.left, .right {
+				width: 17%;
+				margin-top: -15px;
+			}
+
+			.submit {
+				width: 16%;
+			}
+
+			.stars {
+				width:12%;
+			}
+
+		}
+
+		@media (max-width: 767px) {
+			.header{
+				width: 100%;
+				margin: 100px auto 0;
+			}
+
+			.text {
+				margin-top: -20px;
+			}
+
+			form {
+				margin-top: -15px;
+			}
+
+			.input {
+				width: 70%;
+			}
+
+			.submit{
+				width: 18%;
+			}
+
+			.left, .right {
+				width: 17%;
+				margin-top: -15px;
+			}
+
+			.stars {
+				width: 15%;
+				margin-top: -10px;
+			}
+		}
+
+
+	</style>
+
+  </head>
+
+	<body>
+
+		<div class = "container">
+
+			<img src = "/img/Password_03.jpg" class = "header">
+			<img src = "/img/Password_05.jpg" class = "text">
+
+			<img src = "/img/Password_07.jpg" class = "left col-md-offset-3 col-md-2 col-sm-offset-2 col-sm-2 col-xs-offset-1 col-xs-2">
+			<form name = "login" class = "enter col-md-4 col-sm-4 col-xs-6">
+				<input type="text" name = "pass" placeholder="Enter Password" class = "input">
+				<input type = "button" value="go" class = "submit" onClick ="TheLogin(this.form);">
+			</form>
+			<img src = "/img/Password_09.jpg" class = "right col-md-2 col-sm-2 col-xs-2">
+
+			<img src ="/img/Password_12.jpg" class ="stars col-md-offset-1 col-md-2 col-sm-offset-1 col-sm-2 col-xs-offset-2 col-xs-3">
+
+		</div>
+
+	</body>
+ </html>

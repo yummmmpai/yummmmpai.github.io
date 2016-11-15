@@ -1,0 +1,93 @@
+/* Space out Content */
+
+body {
+
+}
+
+/* Header Image*/
+.header {
+	display: block;
+	margin: 10px auto;
+	width: 90%;
+}
+
+img {
+	padding: 15px;
+}
+
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    max-width: 900px;
+    padding-bottom: 40px;
+  }
+
+  .ShaheenRow {
+  	display:none;
+  }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+	.tablet {
+		display:none;
+	}
+
+	.ShaheenRow {
+		display:block;
+	}
+}
+
+@media (max-width: 767px) and (min-width: 550px) {
+	.container {
+		max-width:500px;
+		padding-bottom:20px;
+	}
+
+	.header {
+		width: 100%;
+	}
+
+	.ShaheenRow {
+		display: none;
+	}
+}
+
+@media (max-width: 550px) {
+	.container {
+		max-width:450px;
+		padding-bottom:20px;
+	}
+
+	img {
+		width:100%;
+	}
+
+	.header {
+		width: 100%;
+	}
+
+	.ShaheenRow {
+		display:none;
+	}
+
+}
+
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+
+
+/* Tile Images */
+
+.swap .after {
+	display: none;
+}
+/*
+.swap:active .before {
+	display:none;
+}
+
+.swap:active .after {
+	display: inline-block;
+}*/
