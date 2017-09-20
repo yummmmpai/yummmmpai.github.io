@@ -83,6 +83,7 @@ img {
 .swap .after {
 	display: none;
 }
+
 /*
 .swap:active .before {
 	display:none;
@@ -90,4 +91,6 @@ img {
 
 .swap:active .after {
 	display: inline-block;
-}*/
+}
+
+*/
